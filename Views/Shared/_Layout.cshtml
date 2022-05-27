@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ADMİN</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+<header>
+    <div id="head" class="container-fluid A">
+        <div class="row ">
+                <div id="ımg" class="col-1  text text-center text text-white ">
+                   <div id="txt">
+                       <a class="navbar-brand" href="#">
+    <img src="images/logo.png" width="100" height="50" alt="">
+                   </div>
+                </div>
+                <div class="col-1">
+                    <a class=" h-25 w-50 m-4 p-2 btn btn-block" asp-area="" asp-controller="Home" asp-action="Index">HOME</a>            
+                </div>
+                <div class="col-2 ">
+                    <a class="h- w-50 m-4 p-2 btn btn-block" asp-area="" asp-controller="News" asp-action="News">NEWS</a>
+                </div>
+                <div class="col-2 ">
+                    <a class=" h-50 w-100 m-4 p-2 btn btn-block" asp-area="" asp-controller="News" asp-action="News">USER</a>
+                </div>
+                <div class="col-2">
+                    <a class=" h-50 w-100 m-4 p-2 btn btn-block" asp-area="" asp-controller="News" asp-action="News">ABOUT</a>
+                </div>
+                <div class="col-2">
+                    <a class=" h-50 w-100 m-4 p-2 btn btn-block" asp-area="" asp-controller="Hesap" asp-action="Kayit">SIGN IN</a>
+
+                </div>
+                <div class="col-2">
+            <a class=" h-50 w-100 m-4 p-2 btn btn-block" asp-area="" asp-controller="Hesap" asp-action="Index">
+                <i class="bi bi-box-arrow-in-right"></i>
+                Giriş</a>
+        </div>
+                
+       
+            </div>
+        </div>
+
+</header>
+            @RenderBody()
+<footer class="border-top footer text-muted">
+    <div class="container">
+        <div class="row">
+            <div class="m-1">
+                <img id="maıl" src="~/images/mail.png" />
+            </div>
+            <div class="m-1">
+                <img id="insta" src="~/images/insta.png">
+            </div>
+            <div class="m-1">
+                <img id="git" src="~/images/git.png" />
+            </div>
+            <div class="m-1">
+                <img id="logo" src="~/images/real logo .png">
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
